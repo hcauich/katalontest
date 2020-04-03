@@ -30,5 +30,5 @@ WebUI.click(findTestObject('Object Repository/Page_STORE/button_Log in'))
 
 WebUI.click(findTestObject('Object Repository/Page_STORE/a_Log out'))
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 
