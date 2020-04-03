@@ -14,4 +14,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.demoblaze.com/index.html')
+
+WebUI.click(findTestObject('Object Repository/Page_STORE/a_Log in'))
+
+WebUI.setText(findTestObject('Object Repository/Page_STORE/input_Username_loginusername'), 'admin')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_STORE/input_Password_loginpassword'), 'RAIVpflpDOg=')
+
+WebUI.click(findTestObject('Object Repository/Page_STORE/button_Log in'))
+
+WebUI.click(findTestObject('Object Repository/Page_STORE/a_Log out'))
+
+WebUI.closeBrowser()
 
